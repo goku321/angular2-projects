@@ -1,15 +1,16 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'demo-databinding',
   templateUrl: './databinding.component.html',
   styleUrls: ['./databinding.component.css']
 })
-export class DatabindingComponent implements OnInit {
+export class DatabindingComponent {
 
-  constructor() { }
+ stringInterpolation: string = "I am interpolated";
 
-  ngOnInit() {
-  }
+ onTest(): boolean {
+   return true
+ }
 
 }
