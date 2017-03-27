@@ -1,12 +1,13 @@
-import {Component, Input} from '@angular/core';
+import {Component } from '@angular/core';
 
 @Component({
   selector: 'demo-property-binding',
   template: `
     {{ result }}
   `,
-  styles: []
+  styles: [],
+  inputs: ['result']
 })
 export class PropertyBindingComponent {
-  @Input() result: number = 0;
+  result: number = 0;
 }
